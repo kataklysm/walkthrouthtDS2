@@ -1,12 +1,12 @@
 package com.daveapps.walkthrouthds2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(R.style.Theme_Walkthrouthds2)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        startActivity(Intent(this,MainActivity::class.java))
     }
 }
