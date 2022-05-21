@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_browser"
+            android:title="@string/search"
+            android:icon="@drawable/ic_browser"/>
+        <item
+            android:id="@+id/nav_locations"
+            android:title="@string/locations"
+            android:icon="@drawable/ic_locations"/>
+        <item
+            android:id="@+id/nav_bosses"
+            android:title="@string/bosses"
+            android:icon="@drawable/ic_bosses"/>
+        <item
+            android:id="@+id/nav_characters"
+            android:title="@string/characters"
+            android:icon="@drawable/ic_characters"/>
+    </group>
+
+    <item
+        android:title="@string/items">
+        <menu>
+            <item
+                android:id="@+id/nav_weapons"
+                android:title="@string/weapons"
+                android:icon="@drawable/ic_weapons" />
+            <item
+                android:id="@+id/nav_shields"
+                android:title="@string/shields"
+                android:icon="@drawable/ic_shields"/>
+            <item
+                android:id="@+id/nav_armor"
+                android:title="@string/armor"
+                android:icon="@drawable/ic_armor"/>
+            <item
+                android:id="@+id/nav_rings"
+                android:title="@string/rings"
+                android:icon="@drawable/ic_rings"/>
+            <item
+                android:id="@+id/nav_objects"
+                android:title="@string/items"
+                android:icon="@drawable/ic_objects"/>
+            <item
+                android:id="@+id/nav_spells"
+                android:title="@string/spells"
+                android:icon="@drawable/ic_spells"/>
+            <item
+                android:id="@+id/nav_others"
+                android:title="@string/other_weapons"
+                android:icon="@drawable/ic_other_weapons"/>
+        </menu>
+    </item>
+
+
+</menu>
