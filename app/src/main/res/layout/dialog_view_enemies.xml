@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="280dp"
+        android:layout_height="450dp"
+        android:background="@drawable/bg_linear_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivEnemiesDialog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ogre"
+            android:contentDescription="@string/content_description_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="140dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/HP"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tvEnemiesHP"
+                android:textColor="@color/colorText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enemies"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey">
+
+            <TextView
+                android:layout_width="140dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/weakness"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tvEnemiesWeakness"
+                android:textColor="@color/colorText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/weakness"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="140dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/resistance"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tvEnemiesResistance"
+                android:textColor="@color/colorText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enemies"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey">
+
+            <TextView
+                android:layout_width="140dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/drops"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tvEnemiesDrops"
+                android:textColor="@color/colorText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/drops"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="140dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/dropped_souls"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tvEnemiesSouls"
+                android:textColor="@color/colorText"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/souls"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnOkDialog"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:layout_marginTop="200dp"
+        android:text="@string/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        android:layout_marginStart="120dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

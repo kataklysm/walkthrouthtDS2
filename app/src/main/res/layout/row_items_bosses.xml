@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="2dp"
+    android:backgroundTint="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_background">
+
+        <ImageView
+            android:id="@+id/ivBosses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="@string/content_description_image"
+            android:src="@drawable/ic_home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/Boss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/HP"
+            android:text="@string/boss"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/HP" />
+
+        <TextView
+            android:id="@+id/tvBoss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Boss"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:textAlignment="center"
+            android:layout_toStartOf="@+id/tvHP"
+            android:text="@string/boss"
+            android:typeface="normal"
+            android:textColor="@color/colorTitles"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/tvHP" />
+
+        <TextView
+            android:id="@+id/HP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:text="@string/HP"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/ivBosses" />
+
+        <TextView
+            android:id="@+id/tvHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HP"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:text="@string/HP"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/ivBosses" />
+
+        <TextView
+            android:id="@+id/Weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBoss"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/weakness"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvWeakness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Weakness"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:textAlignment="center"
+            android:text="@string/weakness"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ivBosses"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/resistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resistance"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tvWeakness"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ivBosses"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/tvResistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resistance"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:layout_toLeftOf="@+id/ivBosses"
+            android:gravity="center_horizontal"
+            android:text="@string/resistance"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/tvBoss"
+            android:backgroundTint="@color/colorDivider"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:layout_toLeftOf="@+id/ivBosses"
+            android:background="?android:attr/listDivider"
+            android:layout_marginLeft="15dp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/tvWeakness"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@+id/ivBosses"
+            android:layout_toLeftOf="@+id/ivBosses"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDivider" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

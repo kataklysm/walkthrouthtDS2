@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BuildAttributionWarningsFilter">
+    <option name="noGCSettingWarning" value="true" />
+  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/drawable/splashscreen.xml" value="0.245" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/app_bar_main.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/header.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/menu/drawer_menu.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/menu/menu.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/dialog_view.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/dialog_view_armor.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/dialog_view_enemies.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_armor.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_bosses_details.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_browser.xml" value="0.25" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_shields.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_weapons.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_bosses.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_characters.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_enemies.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_items.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_locations.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/menu/dafault_menu.xml" value="0.26197916666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

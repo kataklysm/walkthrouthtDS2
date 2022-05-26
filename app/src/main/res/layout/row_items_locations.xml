@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="2dp"
+    android:backgroundTint="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_background">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location"
+            android:src="@drawable/majula" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/bonfires"
+            android:layout_toEndOf="@+id/imageView"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/location"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/bonfires"
+            android:layout_toRightOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_alignEnd="@+id/location"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:paddingStart="5dp"
+            android:paddingEnd="3dp"
+            android:text="@string/locations"
+            android:textAlignment="center"
+            android:textColor="@color/colorTitles"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="-1dp"
+            android:layout_alignRight="@+id/location"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/bonfires"
+            android:gravity="end"
+            android:text="@string/bonfires"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/tvBonfires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bonfires"
+            android:layout_alignEnd="@+id/bonfires"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/location"
+            android:text="@string/bonfires"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:layout_alignRight="@+id/bonfires"
+            android:layout_toRightOf="@+id/location"
+            android:gravity="center_horizontal" />
+
+
+
+
+        <TextView
+            android:id="@+id/next_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/next_location"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/tvNextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/next_location"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/next_location"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center_horizontal" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDivider"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@+id/tvNextLocation"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorDivider"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/bosses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNextLocation"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/bosses"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/tvLocationBosses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bosses"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/bosses"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center_horizontal" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
