@@ -1,14 +1,657 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="4dp"
     tools:context=".WeaponsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginBottom="50dp">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvExpandListDagger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/daggers"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconDaggers"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListDagger" />
+
+            <GridView
+                android:id="@+id/gridViewWeaponDaggers"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListDagger"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListStraightSword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/straight_swords"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewWeaponDaggers"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconStraightSword"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewWeaponDaggers"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListStraightSword" />
+
+            <GridView
+                android:id="@+id/gridViewStraightSword"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListStraightSword"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListGreatsword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/greatswords"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewStraightSword"
+                tools:layout_editor_absoluteX="204dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconGreatsword"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewStraightSword"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListGreatsword" />
+
+            <GridView
+                android:id="@+id/gridViewGreatsword"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListGreatsword"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListUltraGreatsword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ultra_greatswords"
+                android:textColor="@color/colorTitles"
+                android:textSize="35sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatsword" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconUltraGreatsword"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatsword"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListUltraGreatsword" />
+
+            <GridView
+                android:id="@+id/gridViewUltraGreatsword"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListUltraGreatsword"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListCurvedSwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/curved_swords"
+                android:textColor="@color/colorTitles"
+                android:textSize="35sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewUltraGreatsword" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconCurvedSwords"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewUltraGreatsword"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListCurvedSwords" />
+
+            <GridView
+                android:id="@+id/gridViewCurvedSwords"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListCurvedSwords"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListKatanas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/katanas"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewCurvedSwords" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconKatanas"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewCurvedSwords"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListKatanas" />
+
+            <GridView
+                android:id="@+id/gridViewKatanas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListKatanas"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListCurvedGreatswords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/curved_greatswords"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewKatanas" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconCurvedGreatswords"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewKatanas"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListCurvedGreatswords" />
+
+            <GridView
+                android:id="@+id/gridViewCurvedGreatswords"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListCurvedGreatswords"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListPiercingSwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/piercing_swords"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewCurvedGreatswords" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconPiercingSwords"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewCurvedGreatswords"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListPiercingSwords" />
+
+
+            <GridView
+                android:id="@+id/gridViewPiercingSwords"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListPiercingSwords"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListAxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/axes"
+                android:textColor="@color/colorTitles"
+                android:textSize="35sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewPiercingSwords" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconAxes"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewPiercingSwords"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListAxes" />
+
+
+            <GridView
+                android:id="@+id/gridViewAxes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListAxes"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListGreatAxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/great_axes"
+                android:textColor="@color/colorTitles"
+                android:textSize="35sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewAxes" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconGreatAxes"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewAxes"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListGreatAxes" />
+
+
+            <GridView
+                android:id="@+id/gridViewGreatAxes"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListGreatAxes"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListHammers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hammers"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatAxes" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconHammers"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatAxes"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListHammers" />
+
+
+            <GridView
+                android:id="@+id/gridViewHammers"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListHammers"
+                tools:layout_editor_absoluteX="8dp" />
+            <TextView
+                android:id="@+id/tvExpandListGreatHammers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/great_hammers"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewHammers" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconGreatHammers"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewHammers"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider113"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListGreatHammers" />
+
+            <GridView
+                android:id="@+id/gridViewGreatHammers"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListGreatHammers" />
+
+            <TextView
+                android:id="@+id/tvExpandListSpears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spears"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatHammers"
+                tools:layout_editor_absoluteX="284dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconSpears"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewGreatHammers"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListSpears" />
+
+
+            <GridView
+                android:id="@+id/gridViewSpears"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListSpears"
+                tools:layout_editor_absoluteX="8dp" />
+
+
+            <TextView
+                android:id="@+id/tvExpandListHalberds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/halberds"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewSpears"
+                tools:layout_editor_absoluteX="261dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconHalberds"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewSpears"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListHalberds" />
+
+
+            <GridView
+                android:id="@+id/gridViewHalberds"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:numColumns="5"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListHalberds" />
+
+            <TextView
+                android:id="@+id/tvExpandListLances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lances"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewHalberds"
+                tools:layout_editor_absoluteX="289dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconLances"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewHalberds"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListLances" />
+
+            <GridView
+                android:id="@+id/gridViewLances"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:numColumns="5"
+                android:nestedScrollingEnabled="true"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListLances"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListReapers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reapers"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewLances"
+                tools:layout_editor_absoluteX="263dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconReapers"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewLances"
+                app:tint="@color/colorButton" />
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListReapers" />
+
+            <GridView
+                android:id="@+id/gridViewReapers"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:numColumns="5"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListReapers"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <TextView
+                android:id="@+id/tvExpandListTwinblades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twinblades"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewReapers"
+                tools:layout_editor_absoluteX="209dp" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconTwinblades"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewReapers"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListTwinblades" />
+
+
+            <GridView
+                android:id="@+id/gridViewTwinblades"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:numColumns="5"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="true"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListTwinblades"
+                tools:layout_editor_absoluteX="8dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2384,7 +2384,7 @@
     <string name="raimes_armor_des">Armadura que usaba el Caballero del Humo.   El Rebelde Raime, tras su derrota a manos de Velstadt, llegó a la Torre de Bruma en busca de una fuerza superior.   Cuando la encontró, no fue a través de una figura regia y paternal como antes, sino de una madre recién hallada que le ofreció un verdadero objetivo.</string>
     <string name="raimes_gauntlets_des">Guanteletes que usaba el Caballero del Humo.   El Rebelde Raime, tras su derrota a manos de Velstadt, llegó a la Torre de Bruma en busca de una fuerza superior.   Cuando la encontró, no fue a través de una figura regia y paternal como antes, sino de una madre recién hallada que le ofreció un verdadero objetivo.</string>
     <string name="raimes_leggings_des">Grebas que usaba el Caballero del Humo.   El Rebelde Raime, tras su derrota a manos de Velstadt, llegó a la Torre de Bruma en busca de una fuerza superior.   Cuando la encontró, no fue a través de una figura regia y paternal como antes, sino de una madre recién hallada que le ofreció un verdadero objetivo.</string>
-    <string name="bell_keeper">Protector de Campana</string>
+    <string name="bell_keeper">Protector de la Campana</string>
     <string name="alonne_knight_helm">Yelmo de Caballero Alonne</string>
     <string name="alonne_knight_helm_des">Yelmo de los caballeros de Alonne.   La unión de los caballeros de Alonne, que servían al Viejo Rey de Hierro, era más fuere, aún que el hierro del reino, pero al final los caballeros sucumbieron a las llamas que derrumbaron el castillo.</string>
     <string name="archdrake_helm">Yelmo Archidragón</string>
@@ -2981,5 +2981,9 @@
     <string name="terms_of_use"><u>Términos de uso y</u></string>
     <string name="privacy_policies"><u>Políticas de privacidad</u></string>
     <string name="giant_lord_soul_des">Alma del Señor de los Gigantes, que antaño conquistó Drangleic.   Vendrick cruzó los mares, hizo prisioneros a los gigantes y se los llevó de vuelta a su castillo, sujetos con hierro. Sin embargo, tras este modesto triunfo, su semblante se ensombrecía visiblemente cada día que pasaba.   Usa el alma especial de este gigante para conseguir numerosas almas o para crear algo de gran valor.</string>
+    <string name="covenants">Juramentos</string>
+    <string name="description">Detalles</string>
+    <string name="blue_sentinels">Centinelas Azules</string>
+
 
 </resources>

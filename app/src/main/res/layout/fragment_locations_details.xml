@@ -1,14 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="@color/colorPrimary"
     tools:context=".LocationsDetailsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="16dp">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLocationDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/location"
+                android:textAlignment="center"
+                android:textColor="@color/colorTitles"
+                android:textSize="38sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/majulaarea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLocationDetails" />
+
+            <TextView
+                android:id="@+id/tvExpandListItemsLocations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/items_area"
+                android:textColor="@color/colorText"
+                android:textSize="33sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivExpandIconItemsLocation"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLocation" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconItemsLocation"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivLocation"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListItemsLocations" />
+
+
+            <GridView
+                android:id="@+id/gridViewItems"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:horizontalSpacing="2dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="5"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListItemsLocations" />
+
+            <TextView
+                android:id="@+id/tvExpandListEnemies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="@string/enemies"
+                android:textColor="@color/colorText"
+                android:textSize="33sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivExpandIconEnemies"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewItems" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconEnemies"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewItems"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListEnemies" />
+
+
+            <GridView
+                android:id="@+id/gridViewEnemies"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:horizontalSpacing="2dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="4"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListEnemies" />
+
+
+            <TextView
+                android:id="@+id/tvExpandListCharacterLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/characters"
+                android:textColor="@color/colorText"
+                android:textSize="33sp"
+                android:paddingLeft="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/ivExpandIconCharacters"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewEnemies" />
+
+            <ImageView
+                android:id="@+id/ivExpandIconCharacters"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_expand_more_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridViewEnemies"
+                app:tint="@color/colorButton" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/tvExpandListCharacterLocation"
+                tools:layout_editor_absoluteX="60dp" />
+
+            <GridView
+                android:id="@+id/gridViewCharactersLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="2dp"
+                android:nestedScrollingEnabled="true"
+                android:numColumns="4"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tvExpandListCharacterLocation" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

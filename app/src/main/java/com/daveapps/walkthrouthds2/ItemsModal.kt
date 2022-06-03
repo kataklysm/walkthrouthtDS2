@@ -16,6 +16,11 @@ data class ItemsModalBosses(
         var image:Int,
 )
 
+class ItemsModalCovenants(covenants: String, image: Int){
+    var covenants: String? = covenants
+    var image: Int? = image
+}
+
 class Modal(item: String, image: Int) {
 
     var item: String? = item

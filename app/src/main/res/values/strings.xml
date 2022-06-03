@@ -2972,5 +2972,8 @@
     <string name="terms_of_use"><u>Terms of use</u></string>
     <string name="privacy_policies"><u>Privacy policies</u></string>
     <string name="giant_lord_soul_des">Soul of the Giant Lord, who once conquered Drangleic.  Vendrick crossed the seas, took prisoner the Giants, and brought them back to his castle, clapped in irons. However, after this modest triumph, his countenance could be seen to grow darker with each passing day.  Use the special soul of this Giant to acquire numerous souls, or to create something of great worth.</string>
+    <string name="covenants">Covenants</string>
+    <string name="description">Description</string>
+    <string name="blue_sentinels">Blue Sentinels</string>
 
 </resources>
