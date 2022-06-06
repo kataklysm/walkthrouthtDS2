@@ -17,7 +17,6 @@ import com.daveapps.walkthrouthds2.databinding.FragmentCharactersDetailsBinding
 class CharactersDetailsFragment : Fragment(),ItemsAdapterItems.ClickListener {
     private var _binding: FragmentCharactersDetailsBinding? = null
     private val binding get() = _binding!!
-    private var provider: String? = null
     private lateinit var communicator: Communicator
     private var modalListItems = ArrayList<Modal>()
     private var modalListLocations = ArrayList<Modal>()
@@ -32,7 +31,6 @@ class CharactersDetailsFragment : Fragment(),ItemsAdapterItems.ClickListener {
         communicator = activity as Communicator
 
         val character = arguments?.getString("name")
-        provider = arguments?.getString("provider")
 
         binding.tvCharactersName.typeface = Typeface.createFromAsset(context?.assets, "fonts/optimussemibold.ttf")
 

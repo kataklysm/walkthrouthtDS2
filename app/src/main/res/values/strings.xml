@@ -2975,5 +2975,16 @@
     <string name="covenants">Covenants</string>
     <string name="description">Description</string>
     <string name="blue_sentinels">Blue Sentinels</string>
+    <string name="brotherhood_of_blood">Brotherhood of Blood</string>
+    <string name="company_of_champions">Company of Champions</string>
+    <string name="dragon_remnants">Dragon Remnants</string>
+    <string name="heirs_of_the_sun">Heirs of the Sun</string>
+    <string name="pilgrims_of_dark">Pilgrims of Dark</string>
+    <string name="way_of_blue">Way of Blue</string>
+    <string name="rat_king_covenant">Rat King</string>
+    <string name="rank">Rank</string>
+    <string name="Victories">Victories</string>
+    <string name="rewards">Rewards</string>
+    <string name="covenant">Covenant</string>
 
 </resources>

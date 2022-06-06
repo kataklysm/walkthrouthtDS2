@@ -2984,6 +2984,17 @@
     <string name="covenants">Juramentos</string>
     <string name="description">Detalles</string>
     <string name="blue_sentinels">Centinelas Azules</string>
+    <string name="brotherhood_of_blood">Hermandad de Sangre</string>
+    <string name="company_of_champions">Compañía de Campeones</string>
+    <string name="dragon_remnants">Restos del Dragón</string>
+    <string name="heirs_of_the_sun">Herederos del Sol</string>
+    <string name="pilgrims_of_dark">Peregrinos de la Oscuridad</string>
+    <string name="way_of_blue">Senda Azul</string>
+    <string name="rat_king_covenant">Juramento del Rey Rata</string>
+    <string name="rank">Rank</string>
+    <string name="Victories">Victorias</string>
+    <string name="rewards">Recompensas</string>
+    <string name="covenant">Juramento</string>
 
 
 </resources>
