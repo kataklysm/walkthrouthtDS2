@@ -2986,5 +2986,6 @@
     <string name="Victories">Victories</string>
     <string name="rewards">Rewards</string>
     <string name="covenant">Covenant</string>
+    <string name="bell_keeper_covenant_des">To join the Bell Keepers, the player must speak to the Bell Keeper of Alken at the entrance of Belfry Luna or Belfry Sol. Exhausting his dialogue will allow the player to join. Upon entering, the player will receive the ring, Bell Keeper\'s Seal.</string>
 
 </resources>

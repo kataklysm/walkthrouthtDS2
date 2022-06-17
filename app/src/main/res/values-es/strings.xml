@@ -2995,6 +2995,7 @@
     <string name="Victories">Victorias</string>
     <string name="rewards">Recompensas</string>
     <string name="covenant">Juramento</string>
+    <string name="bell_keeper_covenant_des">Para unirte a este pacto puedes hacerlo hablando con el enano del Campanario Luna o el del Sol, da igual.   Tras activar el pacto hablando varias veces con el enano, te darán un anillo con el cual serás invocado en un punto de la torre (en el Campanario Luna en un principio es siempre el mismo punto y en el Sol pueden ser tres distintos) y tu objetivo será eliminar al invasor antes de que llegue a la niebla del boss. Cuantas más veces seas invocado y derrotes a dicho invasor, más aumentarás en el rango del juramento.</string>
 
 
 </resources>
