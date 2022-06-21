@@ -2992,10 +2992,16 @@
     <string name="way_of_blue">Senda Azul</string>
     <string name="rat_king_covenant">Juramento del Rey Rata</string>
     <string name="rank">Rank</string>
-    <string name="Victories">Victorias</string>
+    <string name="victories">Victorias</string>
     <string name="rewards">Recompensas</string>
     <string name="covenant">Juramento</string>
     <string name="bell_keeper_covenant_des">Para unirte a este pacto puedes hacerlo hablando con el enano del Campanario Luna o el del Sol, da igual.   Tras activar el pacto hablando varias veces con el enano, te darán un anillo con el cual serás invocado en un punto de la torre (en el Campanario Luna en un principio es siempre el mismo punto y en el Sol pueden ser tres distintos) y tu objetivo será eliminar al invasor antes de que llegue a la niebla del boss. Cuantas más veces seas invocado y derrotes a dicho invasor, más aumentarás en el rango del juramento.</string>
-
+    <string name="initial">Inicial</string>
+    <string name="defeat">Derrota</string>
+    <string name="trespassers">invasores</string>
+    <string name="requirement">Requisito</string>
+    <string name="blue_sentinels_covenant_des">Tienes que hablar con Targray en la Catedral Azul, pero no sin antes haber derrotado al boss Viejo matadragones. Además, necesitas tener un Símbolo de fidelidad para poder hablar con él.   Este juramento consiste en que te darán el anillo Sello del guardián y al llevarlo puesto cuando alguien perteneciente al juramento Senda azul es invadido por otro jugador, te invoca a ti, miembro de los Centinelas azules para que le ayudes a derrotar a su invasor. Después de haber derrotado al menos a un invasor, puedes rezar en las estatuas junto a la Catedral Azul para retar a otros miembros y ganar así rango con los centinelas.</string>
+    <string name="heirs_of_the_sun_des">Para unirse al juramento, el jugador debe arrodillarse ante el Altar de la luz solar ubicado en el Valle de la cosecha. \n Por unirse al juramento, el jugador recibe el Sello del sol. La señal de invocación blanca y el fantasma del jugador serán de color dorado en lugar de blanco, y el tiempo que pueden pasar en otro mundo se extiende .Al derrotar a un jefe después de ser invocado con la Saponita de señal blanca, el anfitrión del mundo y el fantasma recibirán una Medalla de luz solar. Estas medallas sirven para subir de rango en el juramento. La Medalla de luz solar reemplaza al Símbolo de fidelidad que se otorga normalmente.</string>
+    <string name="way_of_blue_des">Desde la hoguera “Fuego lejano” en Majula verás un monumento de piedra, así que sube las escaleras hasta llegar a él y habla varias veces con Saulden que está allí sentado para unirte a este juramento.   Te darán un Sello azul que incrementa ligeramente la vida y además invoca a los Centinelas azules (otro juramento distinto) para que te ayuden cuando eres invadido. Para aumentar de rango tienes que matar a dichos invasores.   Al unirte a este pacto conseguirás el logro/trofeo “Juramento sumiso”.</string>
 
 </resources>

@@ -8,32 +8,6 @@
       <map>
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/drawable/splashscreen.xml" value="0.245" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/app_bar_main.xml" value="0.19907407407407407" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_about.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_armor.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_bosses.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_bosses_details.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_browser.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_characters.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_characters_details.xml" value="0.1" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_covenants.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_covenents_details.xml" value="0.25" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_locations.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_locations_details.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_objects.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_other_weapons.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_rings.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_shields.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_spells.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/fragment_weapons.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/row_items_bosses.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/row_items_characters.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/row_items_covenants.xml" value="0.75" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/row_items_enemies.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/layout/row_items_items.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/menu/about_menu.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/menu/drawer_menu.xml" value="0.2925170068027211" />
-        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthds2/app/src/main/res/menu/menu.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/dialog_view.xml" value="0.26197916666666665" />
@@ -42,7 +16,10 @@
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_armor.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_bosses_details.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_browser.xml" value="0.25" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_covenents_details.xml" value="0.33" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_rings.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_shields.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_spells.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/fragment_weapons.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_bosses.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/evanj/AndroidStudioProjects/walkthrouthtDS2/app/src/main/res/layout/row_items_characters.xml" value="0.26197916666666665" />

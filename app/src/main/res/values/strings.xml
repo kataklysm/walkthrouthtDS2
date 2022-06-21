@@ -2983,9 +2983,16 @@
     <string name="way_of_blue">Way of Blue</string>
     <string name="rat_king_covenant">Rat King</string>
     <string name="rank">Rank</string>
-    <string name="Victories">Victories</string>
+    <string name="victories">Victories</string>
     <string name="rewards">Rewards</string>
     <string name="covenant">Covenant</string>
     <string name="bell_keeper_covenant_des">To join the Bell Keepers, the player must speak to the Bell Keeper of Alken at the entrance of Belfry Luna or Belfry Sol. Exhausting his dialogue will allow the player to join. Upon entering, the player will receive the ring, Bell Keeper\'s Seal.</string>
+    <string name="initial">Initial</string>
+    <string name="defeat">Defeat</string>
+    <string name="trespassers">trespassers</string>
+    <string name="requirement">Requirement</string>
+    <string name="blue_sentinels_covenant_des">"Talk to Blue Sentinel Targray after having obtained a Token of Fidelity either through helping another player defeat a boss as a white phantom or by finding the one on the corpse beneath the rope bridge in Huntsman's Copse. "</string>
+    <string name="heirs_of_the_sun_des">In Harvest Valley, after the 2nd bonfire (The Mines).\nHeirs to the Sun is the sole co-op covenant in the game. Sunlight Medals are awarded for defeating area bosses in co-op; however, you and/or the summoned phantom must be a member of the covenant to earn them. Covenant members are easy to spot as both they and their signs placed by the White Sign Soapstone glow yellow. Earned medals can be offered at the Heirs of the Sun statue in Harvest Valley to increase one\'s rank. Medals are the only way to gain rank in the covenant.Additionally, they can be dropped by Falconers in the Things Betwixt (NG+ only), Shaded Woods, Brightstone Cove Tseldora, and by Banediggers in Harvest Valley. </string>
+    <string name="way_of_blue_des">As soon as you reach Majula, you can head up the hill past the bonfire, towards a large monument structure. Crestfallen Saulden is sitting in front of it, and he will invite you to join the covenant upon exhausting his dialogue. Crestfallen Saulden will give the player a Blue Seal upon joining the covenant. This ring slightly increases the wearer\'s HP, so it can also be useful for people who plan to join a different covenant later. It\'s NOT necessary to equip this ring in order to summon Blue Sentinels to aid you.</string>
 
 </resources>
