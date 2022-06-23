@@ -104,6 +104,7 @@
                     android:textSize="15sp"
                     android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="50dp"
                     android:layout_marginTop="20dp"
                     app:layout_constraintTop_toTopOf="parent" />
                 <TextView
@@ -135,6 +136,7 @@
                     android:id="@+id/tvRank1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
                     android:layout_marginTop="20dp"
                     android:textSize="15sp"
                     android:textAlignment="center"
@@ -173,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="20dp"/>
                 <TextView
                     android:id="@+id/tvVictories2"
                     android:layout_width="wrap_content"
@@ -200,7 +202,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="20dp"/>
                 <TextView
                     android:id="@+id/tvVictories3"
                     android:layout_width="wrap_content"
