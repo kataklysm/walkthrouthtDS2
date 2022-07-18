@@ -25,6 +25,7 @@
                 android:text="@string/covenants"
                 android:textColor="@color/colorTitles"
                 android:textSize="30sp"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -105,14 +106,13 @@
                     android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="30dp"
                     app:layout_constraintTop_toTopOf="parent" />
                 <TextView
                     android:id="@+id/tvVictories"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toStartOf="@+id/gridViewCovenantsItems"
                     app:layout_constraintStart_toEndOf="@+id/tvRank"
@@ -136,8 +136,8 @@
                     android:id="@+id/tvRank1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"
                     android:textSize="15sp"
                     android:textAlignment="center"
                     app:layout_constraintStart_toStartOf="parent"
@@ -147,9 +147,9 @@
                     android:id="@+id/tvVictories1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="15sp"
+                    android:layout_marginTop="30dp"
                     android:textAlignment="center"
+                    android:textSize="15sp"
                     app:layout_constraintEnd_toStartOf="@+id/gridViewCovenantsItems1"
                     app:layout_constraintStart_toEndOf="@+id/tvRank1"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -162,7 +162,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutRank3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,23 +174,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_marginTop="30dp"/>
                 <TextView
                     android:id="@+id/tvVictories2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
-                    android:layout_marginStart="70dp"
-                    android:layout_marginTop="10dp"/>
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvRank2"
+                    app:layout_constraintEnd_toStartOf="@+id/gridViewCovenantsItems2"
+                    android:layout_marginTop="30dp" />
                 <GridView
                     android:id="@+id/gridViewCovenantsItems2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="68dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:numColumns="1" />
-            </LinearLayout>
-            <LinearLayout
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layoutRank4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -201,22 +208,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginStart="50dp"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_marginTop="30dp"/>
                 <TextView
                     android:id="@+id/tvVictories3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
-                    android:layout_marginStart="70dp"
-                    android:layout_marginTop="10dp"/>
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvRank3"
+                    app:layout_constraintEnd_toStartOf="@+id/gridViewCovenantsItems3"
+                    android:layout_marginTop="30dp"/>
                 <GridView
                     android:id="@+id/gridViewCovenantsItems3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="62dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:numColumns="1" />
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

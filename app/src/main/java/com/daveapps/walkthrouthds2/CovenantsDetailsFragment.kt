@@ -14,7 +14,7 @@ import com.daveapps.walkthrouthds2.databinding.FragmentCharactersDetailsBinding
 import com.daveapps.walkthrouthds2.databinding.FragmentCovenentsDetailsBinding
 
 
-class CovenentsDetailsFragment : Fragment(), ItemsAdapterItems.ClickListener{
+class CovenantsDetailsFragment : Fragment(), ItemsAdapterItems.ClickListener{
     private var _binding: FragmentCovenentsDetailsBinding? = null
     private val binding get( ) = _binding!!
     private lateinit var communicator: Communicator
@@ -61,10 +61,10 @@ class CovenentsDetailsFragment : Fragment(), ItemsAdapterItems.ClickListener{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
                 getString(R.string.blue_sentinels_covenant_des),R.drawable.bluesentinelscovenant,R.drawable.guardiansseal,getString(R.string.guardians_seal),
                     R.drawable.spirittreeshield,getString(R.string.spirit_tree_shield),R.drawable.wrathofthegods,getString(R.string.wrath_of_the_gods),R.drawable.bountifulsunlight,getString(R.string.bountiful_sunlight),
-                    "0 "+getString(R.string.victories),
-                    "50 "+getString(R.string.victories),
-                    "150 "+getString(R.string.victories),
-                    "500 "+getString(R.string.victories))
+                    "0 \n"+getString(R.string.victories),
+                    "50 \n"+getString(R.string.victories),
+                    "150 \n"+getString(R.string.victories),
+                    "500 \n"+getString(R.string.victories))
             }
             getString(R.string.heirs_of_the_sun) ->{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
@@ -88,37 +88,37 @@ class CovenentsDetailsFragment : Fragment(), ItemsAdapterItems.ClickListener{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
                 getString(R.string.brotherhood_of_blood_des),R.drawable.brotherhoodofbloodcovenant,R.drawable.crestofblood,getString(R.string.crest_of_blood),
                 R.drawable.curvedtwinblade,getString(R.string.curved_twinblade),R.drawable.crescentsickle,getString(R.string.crescent_sickle),R.drawable.greatchaosfireball,getString(R.string.great_chaos_fireball),
-                "0 "+getString(R.string.points),
-                "50 "+getString(R.string.points),
-                "150 "+getString(R.string.points),
-                "500 "+getString(R.string.points))
+                "0 \n"+getString(R.string.points),
+                "50 \n"+getString(R.string.points),
+                "150 \n"+getString(R.string.points),
+                "500 \n"+getString(R.string.points))
             }
             getString(R.string.rat_king_covenant) ->{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
                 getString(R.string.rat_king_covenant_des),R.drawable.ratkingcovenant,R.drawable.crestoftherat,getString(R.string.crest_of_the_rat),
                 R.drawable.smallsmoothandsilkystone,getString(R.string.small_smooth_silky_stone),R.drawable.smoothandsilkystone,getString(R.string.smooth_and_silky_stone),R.drawable.slumberingdragoncrestring,getString(R.string.slumbering_dragon_crest_ring),
-                 "0 "+getString(R.string.rat_tail),
-                "10 "+getString(R.string.rat_tail),
-                "20 "+getString(R.string.rat_tail),
-                "35 "+getString(R.string.rat_tail))
+                 "0 \n"+getString(R.string.rat_tail),
+                "10 \n"+getString(R.string.rat_tail),
+                "20 \n"+getString(R.string.rat_tail),
+                "35 \n"+getString(R.string.rat_tail))
             }
             getString(R.string.dragon_remnants) ->{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
                 getString(R.string.dragon_remnants_des),R.drawable.dragonremnantscovenant,R.drawable.dragoneye,getString(R.string.dragon_eye),
                 R.drawable.dragonheadstone,getString(R.string.dragon_head_stone),R.drawable.dragontorsostone,getString(R.string.dragon_torso_stone),R.drawable.blackdragongreatsword,getString(R.string.black_dragon_greatsword),
                 "0 \n"+getString(R.string.dragon_scale),
-                "10 "+getString(R.string.dragon_scale),
-                "20 "+getString(R.string.dragon_scale),
-                "30 "+getString(R.string.dragon_scale))
+                "10 \n"+getString(R.string.dragon_scale),
+                "20 \n"+getString(R.string.dragon_scale),
+                "30 \n"+getString(R.string.dragon_scale))
             }
             getString(R.string.company_of_champions) ->{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
                 getString(R.string.company_of_champions_des),R.drawable.companyofchampionscovenant,R.drawable.championstablet,getString(R.string.champions_tablet),
                 R.drawable.greatmagicweapon,getString(R.string.great_magic_weapon),R.drawable.firstdragonring,getString(R.string.first_dragon_ring),R.drawable.vanquishersseal,getString(R.string.vanquishers_seal),
-                "0 "+getString(R.string.awestone),
-                    "10 "+getString(R.string.awestone),
-                    "25 "+getString(R.string.awestone),
-                    "50 "+getString(R.string.awestone))
+                "0 \n"+getString(R.string.awestone),
+                    "10 \n"+getString(R.string.awestone),
+                    "25 \n"+getString(R.string.awestone),
+                    "50 \n"+getString(R.string.awestone))
             }
             getString(R.string.pilgrims_of_dark) ->{
                 setCovenantData(covenant,adapter,adapter1,adapter2,adapter3,
@@ -130,10 +130,6 @@ class CovenentsDetailsFragment : Fragment(), ItemsAdapterItems.ClickListener{
                 getString(R.string.defeat)+" "+getString(R.string.darklurker))
             }
         }
-
-
-
-
         return binding.root
     }
 

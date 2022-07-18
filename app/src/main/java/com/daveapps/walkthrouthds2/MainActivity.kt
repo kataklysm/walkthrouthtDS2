@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val bossesDetailsFragment = BossesDetailsFragment()
         val locationsDetailsFragment = LocationsDetailsFragment()
         val charactersDetailsFragment = CharactersDetailsFragment()
-        val covenantsDetailsFragment = CovenentsDetailsFragment()
+        val covenantsDetailsFragment = CovenantsDetailsFragment()
 
         when(fragment){
             "covenantsFragment" ->{

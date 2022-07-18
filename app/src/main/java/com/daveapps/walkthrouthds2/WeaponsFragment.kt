@@ -197,7 +197,7 @@ class WeaponsFragment : Fragment(), ItemsAdapterItems.ClickListener{
             getString(R.string.black_knight_greatsword),getString(R.string.royal_greatsword),getString(R.string.old_knight_greatsword),getString(R.string.defender_greatsword),getString(R.string.watcher_greatsword),getString(R.string.key_to_the_embedded),
             getString(R.string.drakeblood_greatsword),getString(R.string.majestic_greatsword),getString(R.string.charred_loyce_greatsword),getString(R.string.loyce_greatsword),getString(R.string.greatsword_of_the_forlorn))
 
-        for (items in weaponName.indices) if(modalListCurvedGreatswords.size < 23) modalListGreatswords.add(Modal(this.weaponName[items],weaponImage[items]))
+        for (items in weaponName.indices) if(modalListGreatswords.size < 23) modalListGreatswords.add(Modal(this.weaponName[items],weaponImage[items]))
 
         adapter = ItemsAdapterItems(this.requireContext(),this)
         adapter.setData(modalListGreatswords)
