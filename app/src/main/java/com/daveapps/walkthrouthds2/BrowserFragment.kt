@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.daveapps.walkthrouthds2.databinding.FragmentBrowserBinding
 
 
-class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAdapterBosses.ClickListener,ItemsAdapterItems.ClickListener{
+class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAdapterBosses.ClickListener,ItemsAdapterItems.ClickListener,ItemsAdapterCovenants.ClickListener{
     private var _binding: FragmentBrowserBinding? = null
     private val binding get() = _binding!!
     private lateinit var communicator: Communicator
@@ -26,12 +26,30 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
     private val itemModalListBosses = ArrayList<ItemsModalBosses>()
     private var itemsAdapterItems: ItemsAdapterItems? = null
     private val modalList = ArrayList<Modal>()
-
+    private var itemsAdapterCovenants: ItemsAdapterCovenants? = null
+    private val itemsModalListCovenants = ArrayList<ItemsModalCovenants>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.browser)
         _binding = FragmentBrowserBinding.inflate(inflater,container,false)
         setHasOptionsMenu(true)
+        communicator = activity as Communicator
+
+        val imagesNameCovenants = arrayOf(
+            ItemsModalCovenants(getString(R.string.bell_keeper),R.drawable.bellkeeperscovenant),
+            ItemsModalCovenants(getString(R.string.blue_sentinels),R.drawable.bluesentinelscovenant),
+            ItemsModalCovenants(getString(R.string.brotherhood_of_blood),R.drawable.brotherhoodofbloodcovenant),
+            ItemsModalCovenants(getString(R.string.company_of_champions),R.drawable.companyofchampionscovenant),
+            ItemsModalCovenants(getString(R.string.dragon_remnants),R.drawable.dragonremnantscovenant),
+            ItemsModalCovenants(getString(R.string.heirs_of_the_sun),R.drawable.heirsofthesuncovenant),
+            ItemsModalCovenants(getString(R.string.pilgrims_of_dark),R.drawable.pilgrimsofdarkcovenant),
+            ItemsModalCovenants(getString(R.string.rat_king_covenant),R.drawable.ratkingcovenant),
+            ItemsModalCovenants(getString(R.string.way_of_blue),R.drawable.wayofbluecovenant)
+        )
+        for (items in imagesNameCovenants) if (itemsModalListCovenants.size < 9 ) itemsModalListCovenants.add(items)
+        itemsAdapterCovenants = ItemsAdapterCovenants(this.requireContext(),this)
+        itemsAdapterCovenants?.setData(itemsModalListCovenants)
+
         val imagesNameItems = arrayOf(
 
 
@@ -656,11 +674,8 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
             ItemsModalBosses(getString(R.string.nashandra),"8770","?","?",R.drawable.nashandra),
             ItemsModalBosses(getString(R.string.aldia_scholar_of_the_first_sin),"6800", "?","?",R.drawable.aldiascholarfirstsin)
         )
-        for (items in imagesNameBosses){
-            if (itemModalListBosses.size < 30){
-                itemModalListBosses.add(items)
-            }
-        }
+        for (items in imagesNameBosses) if (itemModalListBosses.size < 30) itemModalListBosses.add(items)
+
 
         itemsAdapterBosses = ItemsAdapterBosses(this)
         itemsAdapterBosses?.setData(itemModalListBosses)
@@ -722,6 +737,8 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
         searchView.maxWidth = Int.MAX_VALUE
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(filterString: String?): Boolean {
+                itemsAdapterCovenants!!.filter.filter(filterString)
+                binding.gridViewCovenantsBrowser.adapter = itemsAdapterCovenants
                 itemsAdapterLocations!!.filter.filter(filterString)
                 itemsAdapterBosses!!.filter.filter(filterString)
                 binding.recyclerViewLocationsBrowser.adapter = itemsAdapterLocations
@@ -732,6 +749,8 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
             }
             override fun onQueryTextChange(filterString: String?): Boolean {
                 if (filterString!!.length >= 2){
+                    itemsAdapterCovenants!!.filter.filter(filterString)
+                    binding.gridViewCovenantsBrowser.adapter = itemsAdapterCovenants
                     itemsAdapterLocations!!.filter.filter(filterString)
                     itemsAdapterBosses!!.filter.filter(filterString)
                     binding.recyclerViewLocationsBrowser.adapter = itemsAdapterLocations
@@ -845,6 +864,21 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
 
         if (!SetDataDialog(this.requireContext(),itemsModalItems.item.toString()).setDataDialog()){
             SetDialogData(this.requireContext(),itemsModalItems.item.toString()).setDialogData()
+        }
+    }
+
+    override fun clickedItemCovenants(itemsModalCovenants: ItemsModalCovenants) {
+
+        when(itemsModalCovenants.covenants){
+            getString(R.string.bell_keeper) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.blue_sentinels) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.brotherhood_of_blood) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.company_of_champions) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.dragon_remnants) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.heirs_of_the_sun) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.pilgrims_of_dark) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.rat_king_covenant) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
+            getString(R.string.way_of_blue) -> communicator.passDataCom(itemsModalCovenants.covenants!!,"covenantsFragment")
         }
     }
 }

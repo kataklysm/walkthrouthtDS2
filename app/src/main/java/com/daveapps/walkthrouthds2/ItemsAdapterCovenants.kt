@@ -79,11 +79,8 @@ class ItemsAdapterCovenants (var context: Context, var clickListener: ClickListe
                 itemsModalList = filterResults?.values as ArrayList<ItemsModalCovenants>
                 notifyDataSetChanged()
             }
-
         }
     }
-
-
 }
 
 
