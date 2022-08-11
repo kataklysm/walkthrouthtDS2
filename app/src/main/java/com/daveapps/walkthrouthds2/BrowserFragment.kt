@@ -715,7 +715,7 @@ class BrowserFragment : Fragment(), ItemsAdapterLocations.ClickListener,ItemsAda
             ItemsModalLocations(getString(R.string.dragon_shrine),"0",getString(R.string.ancient_dragon),"0",R.drawable.dragonshrine)
         )
 
-        for (items in imagesNameLocations){////////////////////////////incremente the counter in function on the imagesName Array
+        for (items in imagesNameLocations){////////////////////////////increment the counter in function on the imagesName Array
             if (itemModalListLocations.size < 30){
                 itemModalListLocations.add(items)
             }

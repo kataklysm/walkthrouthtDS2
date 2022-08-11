@@ -3003,5 +3003,7 @@
     <string name="rank1">Clear one of the three Abyssal Dungeons</string>
     <string name="rank2">Clear all three Abyssal Dungeons</string>
     <string name="darklurker">Darklurker</string>
+    <string name="about_text"> Guidebite appreciates your support and preference for downloading this guide app, this project was made for fans of Darks souls and it was also made by fans. \n \n We want this app to continue to improve day by day and not only this app, but we want to make more apps based on the preference of our users.\n \n We would appreciate your support to continue and make these projects come true, and always offer you the best apps. Thank you very much for your contribution. \n You can visit us at the following link on our website and support us from there. </string>
+    <string name="link"><u>https://guidebite.net/view/projects</u></string>
 
 </resources>
