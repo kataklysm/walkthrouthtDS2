@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -54,6 +55,10 @@ class SetDialogData(context: Context,private var name: String) : Fragment(){
     private var tvIconLightningDef: TextView? = null
     private var ivIconDurability: ImageView? = null
     private var tvIconDurability: TextView? = null
+    private var layoutDes1: LinearLayout? = null
+    private var layoutDes2: LinearLayout? = null
+    private var layoutDes3: LinearLayout? = null
+    private var layoutDes4: LinearLayout? = null
     private var dialog: AlertDialog? = null
 
     fun setDialogData(){
@@ -61,6 +66,10 @@ class SetDialogData(context: Context,private var name: String) : Fragment(){
         val builder = AlertDialog.Builder(contextDialog)
         val view = View.inflate(contextDialog,R.layout.dialog_view,null)
 
+        layoutDes1 = view.findViewById(R.id.layoutDes1)
+        layoutDes2 = view.findViewById(R.id.layoutDes2)
+        layoutDes3 = view.findViewById(R.id.layoutDes3)
+        layoutDes4 = view.findViewById(R.id.layoutDes4)
         imageDialog = view.findViewById(R.id.ivItemDialog)
         tvItemDialog = view.findViewById(R.id.tvItemDialog)
         tvItemDes = view.findViewById(R.id.tvItemDescription)
@@ -108,6 +117,7 @@ class SetDialogData(context: Context,private var name: String) : Fragment(){
 
 
         when(name){
+            contextDialog.getString(R.string.great_lightning_spear) -> setDataDialogMagics("greatlightningspear",contextDialog.getString(R.string.great_lightning_spear),contextDialog.getString(R.string.great_lightning_spears_des),"","42")
             contextDialog.getString(R.string.dragon_acolyte_robe) -> setDataDialogArmor( "dragonacolyterobe",contextDialog.getString(R.string.dragon_acolyte_robe),contextDialog.getString(R.string.dragon_acolyte_robe_des),"59","","62","27","57","23","57","0","24","27","24","28","55","30","3.9","","","","")
             contextDialog.getString(R.string.giant_lord_soul) -> setDataDialogObjects( "giantlordsoul",contextDialog.getString(R.string.giant_lord_soul),contextDialog.getString(R.string.giant_lord_soul_des))
             contextDialog.getString(R.string.knight_leggings) -> setDataDialogArmor("knightleggingsframe",contextDialog.getString(R.string.knight_leggings),contextDialog.getString(R.string.knight_leggings_des),"54","12","52","14","61","20","54","","16","","17","12","80","16","6.4","","","","")
@@ -687,6 +697,10 @@ class SetDialogData(context: Context,private var name: String) : Fragment(){
         tvItemDialog?.text = itemTitle
         tvItemDialog?.typeface = Typeface.createFromAsset(contextDialog.assets,"fonts/optimussemibold.ttf")
         if (description.length > 300) tvItemDes?.textSize = 14F
+        layoutDes1?.visibility = View.GONE
+        layoutDes2?.visibility = View.GONE
+        layoutDes3?.visibility = View.GONE
+        layoutDes4?.visibility = View.GONE
         tvItemDes?.text = description
         tvItemDes?.typeface = Typeface.createFromAsset(contextDialog.assets,"fonts/optimussemibold.ttf")
         ivIconStrength?.setImageResource(R.drawable.iconstrength)

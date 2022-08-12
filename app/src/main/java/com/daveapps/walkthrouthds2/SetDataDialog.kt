@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -53,6 +54,10 @@ class SetDataDialog(context: Context, private var name: String) : Fragment() {
     private var tvIconLightningDef: TextView? = null
     private var ivIconDurability: ImageView? = null
     private var tvIconDurability: TextView? = null
+    private var layoutDes1: LinearLayout? = null
+    private var layoutDes2: LinearLayout? = null
+    private var layoutDes3: LinearLayout? = null
+    private var layoutDes4: LinearLayout? = null
     private var dialog: AlertDialog? = null
 
 
@@ -62,6 +67,10 @@ class SetDataDialog(context: Context, private var name: String) : Fragment() {
         val builder = AlertDialog.Builder(contextDialog)
         val view = View.inflate(contextDialog,R.layout.dialog_view,null)
 
+        layoutDes1 = view.findViewById(R.id.layoutDes1)
+        layoutDes2 = view.findViewById(R.id.layoutDes2)
+        layoutDes3 = view.findViewById(R.id.layoutDes3)
+        layoutDes4 = view.findViewById(R.id.layoutDes4)
         imageDialog = view.findViewById(R.id.ivItemDialog)
         tvItemDialog = view.findViewById(R.id.tvItemDialog)
         tvItemDes = view.findViewById(R.id.tvItemDescription)
@@ -728,7 +737,10 @@ class SetDataDialog(context: Context, private var name: String) : Fragment() {
         dialog?.show()
         dialog?.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog?.setCancelable(false)
-
+        layoutDes1?.visibility = View.GONE
+        layoutDes2?.visibility = View.GONE
+        layoutDes3?.visibility = View.GONE
+        layoutDes4?.visibility = View.GONE
         imageDialog?.setImageResource(contextDialog.resources.getIdentifier(image,"drawable",contextDialog.packageName))
         tvItemDialog?.text = itemTitle
         tvItemDialog?.typeface = Typeface.createFromAsset(contextDialog.assets,"fonts/optimussemibold.ttf")
